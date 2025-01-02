@@ -8,6 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
       - name: 'Docker Login'
         uses: azure/docker-login@v2
         with:
